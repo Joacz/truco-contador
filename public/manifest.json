@@ -1,25 +1,36 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
+  "short_name": "Trucounter",
+  "name": "Contador De Truco",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "about_me": {
+    "full_name": "Joaquín Gómez",
+    "country": {
+      "name": "Argentina",
+      "province": "Santa Fe"
+    },
+
+    "languages": [{ "spanish": "native" }, { "english": "intermediate" }],
+
+    "technologies": [
+      {
+        "backend": [
+          { "Java": ["Spring Framework", "Hibernate"] },
+          { "Database": "MySQL, MongoDB" }
+        ],
+        "frontend": [
+          { "Javascript": ["Next.js", "React.js"] },
+          { "Design": ["Figma", "HTML", "CSS"] }
+        ],
+        "libraries": ["TailwindCSS", "BootStrap"],
+        "dob": "23/09/07"
+      }
+    ],
+
+    "github":"https://github.com/Joacz",
+    "email":"joagomez2007@gmail.com"
+
+  }
 }

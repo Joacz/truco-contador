@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contador-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: .5em;
+  width: 60%;
+}
+
+.reinicio-container {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.contador {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.reiniciar {
+  padding: 2em;
+  outline: none;
+  border: none;
+  border-radius: .2em;
+  margin: 1em;
+  background: rgb(255, 171, 60);
+}
+
+.reiniciar:hover {
+  background: rgb(255, 188, 100);
+  cursor: pointer;
+}
+
+.reiniciar:active {
+  transform: scale(.9);
+}
+
+.nosotros-container,
+.ellos-container {
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: #fff;
+  flex-direction: column;
+  padding: 2em;
+  position: relative;
+}
+
+.pantalla-ganar {
+  position: absolute;
+  font-size: 3em;
+  background: #3902f2;
+  color: #fff;
+  font-weight: 900;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5em;
+  height: 400px;
+  top: 50%;
+  text-align: center;
+  box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.507);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons {
+  width: 100%;
+  gap: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  width: 70px;
+  background: #3902f2;
+  border-radius: 100%;
+  height: 70px;
+  border: none;
+  outline: none;
   color: white;
+  font-weight: 900;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons button:hover {
+  cursor: pointer;
+  background: #6034f2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button:active {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.puntos {
+  top: 200px;
+  left: 0;
+  gap: 1em;
+  width: 50%;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+h1,
+h2,
+h3 {
+  font-size: 1.5em;
 }
